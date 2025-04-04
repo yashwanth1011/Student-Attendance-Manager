@@ -33,8 +33,8 @@ Attendance Manager is an Android-based application built using Java and Gradle. 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/Attendance-Manager.git
-   cd Attendance-Manager
+   git clone [https://github.com/yashwanth1011/Student-Attendance-Manager.git](https://github.com/yashwanth1011/Student-Attendance-Manager.git)
+   cd Student-Attendance-Manager
    ```
 
 2. **Open in Android Studio:**
