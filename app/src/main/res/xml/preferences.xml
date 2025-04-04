@@ -1,0 +1,127 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/header_general">
+
+        <EditTextPreference
+            app:icon="@drawable/ic_person"
+            app:key="@string/key_name"
+            app:title="Name"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:icon="@drawable/ic_outline_check_box"
+            app:key="@string/key_attendance_criterion"
+            app:title="Edit attendance criterion" />
+
+        <SwitchPreference
+            app:icon="@drawable/ic_vibration"
+            app:key="@string/key_vibration"
+            app:summary="Haptic feedback on marking attendance"
+            app:title="Vibration" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/header_subjects">
+
+        <Preference
+            app:icon="@drawable/ic_edit"
+            app:key="@string/key_edit_subjects"
+            app:summary="Edit all kinds of subject data and add subjects"
+            app:title="Edit subjects" />
+
+        <Preference
+            app:icon="@drawable/ic_predict"
+            app:key="@string/key_predict"
+            app:summary="Predict attendance of each subject"
+            app:title="Predict" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Notification">
+
+        <SwitchPreference
+            app:icon="@drawable/ic_notification"
+            app:key="@string/key_notification"
+            app:summary="Get notifications to fill in your attendance"
+            app:title="Notifications" />
+
+        <Preference
+            app:dependency="@string/key_notification"
+            app:icon="@drawable/ic_time"
+            app:key="@string/key_notification_time"
+            app:summary="Set when you would like to get your daily notifications"
+            app:title="Edit notification time" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/header_database">
+
+        <Preference
+            app:icon="@drawable/ic_reset"
+            app:key="@string/key_reset_attendance"
+            app:summary="Resets the attendance, this won't affect the subjects or time table"
+            app:title="Reset attendance" />
+
+        <Preference
+            app:icon="@drawable/ic_delete"
+            app:key="@string/key_clear_database"
+            app:summary="Clears the entire database including all subjects and time table data"
+            app:title="Clear database" />
+
+        <Preference
+            app:icon="@drawable/ic_backup"
+            app:key="@string/key_backup"
+            app:summary="Create a local backup of the database. You can later restore the data on another device"
+            app:title="Backup" />
+
+        <Preference
+            app:icon="@drawable/ic_recover"
+            app:key="@string/key_restore"
+            app:summary="Restore data from a local backup file"
+            app:title="Restore" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/header_about">
+
+        <Preference
+            app:icon="@drawable/ic_rate_review"
+            app:key="@string/key_rate_app"
+            app:summary="★★★★★"
+            app:title="Rate App" />
+
+        <Preference
+            app:icon="@drawable/ic_bug_report"
+            app:key="@string/key_bug_report"
+            app:title="Bug Report" />
+
+        <Preference
+            app:icon="@drawable/ic_share"
+            app:key="@string/key_share_app"
+            app:title="Share App" />
+
+        <Preference
+            app:icon="@drawable/ic_info"
+            app:key="@string/key_about"
+            app:summary="@string/app_version_name"
+            app:title="About Attendance Manager" />
+
+        <Preference
+            app:icon="@drawable/ic_tags"
+            app:key="@string/key_developed_by"
+            app:summary="@string/developer_name"
+            app:title="Developed by" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
