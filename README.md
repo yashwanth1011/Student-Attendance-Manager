@@ -1,4 +1,4 @@
-```markdown
+
 # Attendance Manager (Android App)
 
 Attendance Manager is an Android-based application built using Java and Gradle. It helps educators and teams efficiently manage and track attendance records on mobile devices.
